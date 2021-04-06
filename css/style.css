@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+#topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.88);
+    height: 120px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.agendar {
+    float: right;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 80px;
+}
+
+body {
+    background-color: #CEC6C6;
+}
+
+#topo nav {
+    justify-content: center;
+    font-family: kiona;
+    font-size: 1.3rem;
+}
+
+#topo nav a {
+    color: #BE9178;
+    text-decoration: none;
+    margin: 10px;
+}
+
+#topo nav a:hover {
+    color: #D9A589;
+    text-decoration: underline;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+
+
+.agendar{
+    color: #BE9178;
+    font-family: kiona;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 5px;
+    border-style: outset;
+    border-radius: 5px ;
+}
+
+@font-face {
+    font-family: "kiona";
+    src: url(../css/docs/kiona/Kiona-Regular.ttf);
+}
+
+#content{
+    display: flex;
+    background-color: #ffffff;
+    max-width: 87%;
+    min-width: 87%;
+    height: 1000px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.perfil{
+    width: 70%;
+    height: 70%;
+}
