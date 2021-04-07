@@ -11,6 +11,7 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.88);
     height: 120px;
+    width: auto;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -49,9 +50,7 @@ body {
     transition: 0.3s;
 }
 
-
-
-.agendar{
+.agendar {
     color: #BE9178;
     font-family: kiona;
     font-size: 1.2rem;
@@ -59,7 +58,7 @@ body {
     margin-right: 30px;
     padding: 5px;
     border-style: outset;
-    border-radius: 5px ;
+    border-radius: 5px;
 }
 
 @font-face {
@@ -67,17 +66,23 @@ body {
     src: url(../css/docs/kiona/Kiona-Regular.ttf);
 }
 
-#content{
+.container {
     display: flex;
-    background-color: #ffffff;
-    max-width: 87%;
-    min-width: 87%;
-    height: 1000px;
-    margin: auto;
-    margin-top: 50px;
+    justify-content: space-around;
+    background-color: azure;
+    margin: 120px 100px;
+    height: 600px;
+    border-style: solid;
 }
 
-.perfil{
-    width: 70%;
-    height: 70%;
+.colunas {
+    flex-direction: column;
+    padding: 20px;
 }
+
+.perfil {
+    align-items: flex-end;
+    height: 100%;
+    margin-left: rem;
+}
+
