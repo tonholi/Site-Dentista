@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "kiona";
+    src: url(../css/docs/kiona/Kiona-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -61,15 +66,10 @@ body {
     border-radius: 5px;
 }
 
-@font-face {
-    font-family: "kiona";
-    src: url(../css/docs/kiona/Kiona-Regular.ttf);
-}
-
 .container {
     display: flex;
     justify-content: space-around;
-    background-color: azure;
+    background-color: white;
     margin: 120px 100px;
     height: 600px;
     border-style: solid;
@@ -81,8 +81,12 @@ body {
 }
 
 .perfil {
-    align-items: flex-end;
+    float: right;
     height: 100%;
-    margin-left: rem;
 }
+
+#foto{
+    width: 460px;
+}
+
 
