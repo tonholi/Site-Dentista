@@ -34,11 +34,13 @@
 
 body {
     background-color: #CEC6C6;
+    /*background-image: url("./img/674.jpg");
+    background-size: cover;*/
 }
 
 #topo nav {
     justify-content: center;
-    font-family: kiona;
+    font-family: 'kiona';
     font-size: 1.3rem;
 }
 
@@ -57,7 +59,7 @@ body {
 
 .agendar {
     color: #BE9178;
-    font-family: kiona;
+    font-family: 'kiona';
     font-size: 1.2rem;
     text-decoration: none;
     margin-right: 30px;
@@ -69,10 +71,12 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
-    background-color: white;
+    background-color: #78BFBD;
     margin: 120px 100px;
-    height: 600px;
+    min-height: 350px;
+    max-height: 600px;
     border-style: solid;
+    border-color: #317370;
 }
 
 .colunas {
@@ -82,11 +86,27 @@ body {
 
 .perfil {
     float: right;
-    height: 100%;
+    height: 99%;
+    border-style: solid;
+    border-color: #317370;
 }
 
-#foto{
+#foto {
     width: 460px;
 }
 
+.container h1 {
+    color: azure;
+    font-family: 'kiona', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
 
+.container p {
+    color: azure;
+    font-family: 'kiona', sans-serif;
+    font-weight: 500;
+    line-height: 1.8rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
