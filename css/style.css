@@ -1,6 +1,6 @@
 @font-face {
     font-family: "kiona";
-    src: url(../css/docs/kiona/Kiona-Regular.ttf);
+    src: url(../css/docs/Kiona-Regular.ttf);
 }
 
 * {
@@ -33,7 +33,7 @@
 }
 
 body {
-    background-color: #CEC6C6;
+    background-color: hsl(0, 33%, 90%);
     /*background-image: url("./img/674.jpg");
     background-size: cover;*/
 }
