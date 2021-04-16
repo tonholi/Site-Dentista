@@ -37,6 +37,11 @@ body {
     margin-left: 80px;
 }
 
+body {
+    background-image: url("../img/674.jpg");
+    background-size: cover;
+}
+
 #topo nav {
     justify-content: center;
     font-family: 'kiona';
