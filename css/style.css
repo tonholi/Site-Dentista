@@ -96,6 +96,17 @@ body {
     align-items: center;
 }
 
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    background-color: #78BFBD;
+    margin: 120px 100px;
+    min-height: 350px;
+    max-height: 600px;
+    border-style: solid;
+    border-color: #317370;
+}
+
 .colunas {
     flex-direction: column;
     padding: 20px;
@@ -119,7 +130,23 @@ body {
     font-weight: bold;
 }
 
+.conteudo h1 {
+    color: azure;
+    font-family: 'kiona', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 .container p {
+    color: azure;
+    font-family: 'kiona', sans-serif;
+    font-weight: 500;
+    line-height: 1.8rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.conteudo p {
     color: azure;
     font-family: 'kiona', sans-serif;
     font-weight: 500;

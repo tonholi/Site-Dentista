@@ -1,13 +1,15 @@
 <?php
+
 include ('config.php');
-session_start(); // inicia a sessao	
+//session_start();
+//if (@$_SESSION["UsuarioNivel"] != "ADM") echo "<script>alert('Você não é Administrador!');top.location.href='index.php';</script>";
 
 
 if (@$_REQUEST['botao']=="entrar")
 {
 	$login = $_POST['login'];
 	$senha = md5($_POST['senha']);
-    verifyCPF($cpf);
+
 	
 	$query = "SELECT * FROM usuario WHERE email = '$login' AND senha = '$senha' ";
 	$result = mysqli_query($con, $query);
@@ -20,12 +22,12 @@ if (@$_REQUEST['botao']=="entrar")
 		// caso queira direcionar para páginas diferentes
 		$niv = $coluna['nivel'];
 		if($niv == "USER"){ 
-			header("Location: indexLogado.php"); 
+			header("Location: index_logado.php"); 
 			exit; 
 		}
 		
 		if($niv == "ADM"){ 
-			header("Location: indexLogadoADM.php"); 
+			header("Location: index_adm_logado.php"); 
 			exit; 
 		}
 		
@@ -66,7 +68,7 @@ if (@$_REQUEST['botao']=="entrar")
                 <input class="input" type="password" placeholder="Senha" name="senha">
                 <span class="input-border"></span>
                 <button type=submit class="submit" name=botao value=entrar>Login</button>
-                <button href="cadastro_usuario.php" type=submit class="submit" name=botao value=entrar>Cadastra-se</button>
+                <button type=cadastro class="submit" name=botao value=cadastro> <a href="cadastro_usuario.php"> Cadastrar-se</button>
                 <br>
             </form>
         </div>

@@ -31,10 +31,18 @@ if (@$_REQUEST['botao']=="cadastrar")
     <title>Dra. Karen Mayumi</title>
 </head>
 
+
+
 <body class="bg">
     <header>
         <div id="topo">
             <img class="logo" src="./img/logo.png" alt="Logo Dra. Karen">
+            <nav>
+                <a href="consultas_agendadas.php ">Consultas Agendadas </a>
+                <a href="cadastro_materiais.php"> Cadastrar Materiais </a>
+                <a href=""> usuários </a>
+                <a href=""> </a>
+            </nav>
             <nav>
                 <a href="./index_adm_logado.php"> Voltar ao inicio </a>                
             </nav>
