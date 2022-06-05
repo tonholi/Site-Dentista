@@ -1,3 +1,14 @@
+:root {
+    --input-linear: linear-gradient(120deg, #5865F2, #000000);
+    --button-linear: linear-gradient(120deg, #78BFBD, #317370, #78BFBD);
+    --white: #fff;
+    --black: #303030;
+    --gray: #929292;
+    --light-gray: #cfcfcf;
+    --border-height: 1px;
+}
+
+
 @font-face {
     font-family: "kiona";
     src: url(../css/docs/Kiona-Regular.ttf);
@@ -74,13 +85,15 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #78BFBD;
     margin: 120px 100px;
     min-height: 350px;
     max-height: 600px;
     border-style: solid;
     border-color: #317370;
+    flex-direction: column;
+    align-items: center;
 }
 
 .colunas {
@@ -114,3 +127,79 @@ body {
     font-size: 1.5rem;
     text-align: justify;
 }
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: unset;
+    outline: none;
+}
+
+.input-border {
+    height: var(--border-height);
+    width: 100%;
+    margin-bottom: 36px;
+    background-color: var(--light-gray);
+    transition: .3s ease-in-out;
+}
+
+.input-border::after {
+    content: '';
+    display: block;
+    height: var(--border-height);
+    width: 0;
+    margin-bottom: 16px;
+    background: var(--input-linear);
+    transition: 0.5s ease-in-out;
+}
+
+.input:focus+.login_input-border::after {
+    width: 100%;
+}
+
+.submit {
+    height: 48px;
+    width: 100%;
+    outline: none;
+    background: var(--button-linear);
+    background-size: 200%;
+    margin-bottom: 32px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.cadastro {
+    height: 48px;
+    width: 100%;
+    outline: none;
+    background: var(--button-linear);
+    background-size: 200%;
+    margin-bottom: 32px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.submit:hover {
+    background-position: right;
+}
+

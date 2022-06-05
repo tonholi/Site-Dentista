@@ -15,12 +15,13 @@
         <div id="topo">
             <img class="logo" src="./img/logo.png" alt="Logo Dra. Karen">
             <nav>
-                <a href="./index.html"> Home </a>
-                <a href="./institucional.html"> Institucional </a>
+                <a href="./index.php"> Home </a>
+                <a href="./institucional.php"> Institucional </a>
                 <a href=""> Contato </a>
                 <a href=""> Trabalhos Realizados </a>
             </nav>
-            <label><a class="agendar" href="">Agendar Consulta</a></label>
+            <label><a class="agendar" href="login.php">Login
+            </a></label>
         </div>
     </header>
 </body>
