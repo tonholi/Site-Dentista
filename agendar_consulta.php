@@ -1,27 +1,3 @@
-<?php
-include ('config.php');
-session_start(); // inicia a sessao	
-
-
-if (@$_REQUEST['botao']=="cadastrar")
-{
-
-
-	$senha = md5($_POST['senha']);
-    $nome = $_POST['nome'];
-	$cpf = $_POST['cpf'];
-    $email = $_POST['email'];
-    verifyCPF($cpf);
-    $uploaddir = 'img/';
-    $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
-
-	$query = "INSERT INTO usuario (nome, senha, email, cpf, nivel, imagem) VALUES ('$nome', '$senha', '$email', '$cpf', 'USER', '$uploadfile')";
-	$result = mysqli_query($con, $query);
-    header("Location: login.php"); 
-	
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,21 +23,16 @@ if (@$_REQUEST['botao']=="cadastrar")
 
     <main class="principal">
         <div class="container">
-            <h1 class="title">Usuários</h1>
+            <h1 class="title">Consultas</h1>
             <form action="cadastro_usuario.php" class="form" method=post>
-                <input class="input" type="Text" placeholder="Nome" name="nome">
+                <input class="input" type="Text" placeholder="data consulta" name="data">
                 <span class="input-border"></span>
-                <input class="input" type="text" placeholder="e-mail" name="email">
+                <input class="input" type="text" placeholder="Horário" name="horario">
                 <span class="input-border"></span>
-                <input class="input" type="password" placeholder="Senha" name="senha">
-                <span class="input-border"></span>
-                <input class="input" type="text" placeholder="CPF" name="cpf">
-                <span class="input-border"></span>
-                <input class="input" type="file" placeholder="arquivo" name="userfile">
+                <input class="input" type="text" placeholder="Especialidade" name="especialidade">
                 <span class="input-border"></span>
                 <button type=submit class="submit" name="botao" value="cadastrar">Cadastrar</button>
                 <br>
-
             </form>
         </div>
     </main>

@@ -63,7 +63,7 @@ if (@$_REQUEST['botao']=="entrar")
         <div class="container">
             <h1 class="title">Login</h1>
             <form action="" class="form" method=post>
-                <input class="input" type="text" placeholder="Usuário" name="login">
+                <input class="input" type="text" placeholder="E-mail" name="login">
                 <span class="input-border"></span>
                 <input class="input" type="password" placeholder="Senha" name="senha">
                 <span class="input-border"></span>

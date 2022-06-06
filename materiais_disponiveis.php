@@ -40,8 +40,7 @@ if (@$_REQUEST['botao']=="cadastrar")
             <nav>
                 <a href="consultas_agendadas.php ">Consultas Agendadas </a>
                 <a href="cadastro_materiais.php"> Cadastrar Materiais </a>
-                <a href=""> usuários </a>
-                <a href=""> </a>
+                <a href="relatorio_usuarios.php"> usuários </a>
             </nav>
             <nav>
                 <a href="./index_adm_logado.php"> Voltar ao inicio </a>                
@@ -52,7 +51,7 @@ if (@$_REQUEST['botao']=="cadastrar")
 
     <main class="principal">
         <div class="container">
-            <h1 class="title">Cadastrar-se</h1>
+            <h1 class="title">Materiais materiais_disponiveis</h1>
             <form action="cadastro_usuario.php" class="form" method=post>
                 <input class="input" type="Text" placeholder="Nome" name="nome">
                 <span class="input-border"></span>
