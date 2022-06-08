@@ -1,6 +1,6 @@
 <?php 
     include ('config.php');
-    //include('verifica.php')
+    include('verifica.php')
 ?>
 
 <!DOCTYPE html>

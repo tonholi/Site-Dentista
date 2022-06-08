@@ -1,8 +1,8 @@
 <?php
 
 include ('config.php');
-//session_start();
-//if (@$_SESSION["UsuarioNivel"] != "ADM") echo "<script>alert('Você não é Administrador!');top.location.href='index.php';</script>";
+session_start();
+
 
 
 if (@$_REQUEST['botao']=="entrar")

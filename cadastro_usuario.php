@@ -1,6 +1,6 @@
 <?php
 include ('config.php');
-session_start(); // inicia a sessao	
+
 
 
 if (@$_REQUEST['botao']=="cadastrar")
@@ -13,7 +13,8 @@ if (@$_REQUEST['botao']=="cadastrar")
     $email = $_POST['email'];
     verifyCPF($cpf);
     $uploaddir = 'img/';
-    $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+    $uploadfile = $uploaddir . basename($_FILES['arquivo']['name']);
+    move_uploaded_file($_FILES['arquivo']['tmp_name'],$uploadfile);
 
 	$query = "INSERT INTO usuario (nome, senha, email, cpf, nivel, imagem) VALUES ('$nome', '$senha', '$email', '$cpf', 'USER', '$uploadfile')";
 	$result = mysqli_query($con, $query);
@@ -48,7 +49,7 @@ if (@$_REQUEST['botao']=="cadastrar")
     <main class="principal">
         <div class="container">
             <h1 class="title">Usuários</h1>
-            <form action="cadastro_usuario.php" class="form" method=post>
+            <form enctype="multipart/form-data" action="cadastro_usuario.php" class="form" method=post>
                 <input class="input" type="Text" placeholder="Nome" name="nome">
                 <span class="input-border"></span>
                 <input class="input" type="text" placeholder="e-mail" name="email">
@@ -57,7 +58,7 @@ if (@$_REQUEST['botao']=="cadastrar")
                 <span class="input-border"></span>
                 <input class="input" type="text" placeholder="CPF" name="cpf">
                 <span class="input-border"></span>
-                <input class="input" type="file" placeholder="arquivo" name="userfile">
+                <input class="input" type="file" placeholder="arquivo" name="arquivo">
                 <span class="input-border"></span>
                 <button type=submit class="submit" name="botao" value="cadastrar">Cadastrar</button>
                 <br>

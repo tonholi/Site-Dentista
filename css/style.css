@@ -114,13 +114,17 @@ body {
 
 .perfil {
     float: right;
-    height: 99%;
     border-style: solid;
     border-color: #317370;
+    width: 50%;
+    height: 50%;
+
 }
 
+
 #foto {
-    width: 460px;
+    width: 50%;
+    height: 50%;
 }
 
 .container h1 {

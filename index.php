@@ -18,7 +18,6 @@
                 <a href="./index.php"> Home </a>
                 <a href="./institucional.php"> Institucional </a>
                 <a href=""> Contato </a>
-                <a href=""> Trabalhos Realizados </a>
             </nav>
             <label><a class="agendar" href="login.php">Login
             </a></label>
@@ -38,7 +37,7 @@
                     </p>
                 </div>
                 <div id="foto" class="colunas">
-                    <img class="perfil" src="" alt="foto Dra. Karen">
+                    <img class="perfil" src="./img/PIM_dentista_03.jpg" alt="foto Dra. Karen">
                 </div>
             </div>
         </section>
