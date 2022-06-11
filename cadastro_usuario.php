@@ -11,7 +11,9 @@ if (@$_REQUEST['botao']=="cadastrar")
     $nome = $_POST['nome'];
 	$cpf = $_POST['cpf'];
     $email = $_POST['email'];
-    verifyCPF($cpf);
+    if(!verifyCPF($cpf)){
+        echo '<script> alert("CPF inválido!")';
+    }
     $uploaddir = 'img/';
     $uploadfile = $uploaddir . basename($_FILES['arquivo']['name']);
     move_uploaded_file($_FILES['arquivo']['tmp_name'],$uploadfile);

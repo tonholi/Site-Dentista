@@ -4,15 +4,16 @@ include('verifica.php');
 
 if (@$_REQUEST['botao']=="cadastrar")
 {
-    $id = $_SESSION['id_usuario'];
+    $id = $_SESSION['id_usuario']; 
 	$data = $_POST['data'];
     $horario = $_POST['horario'];
     $especialidade= $_POST['especialidade'];
-
-
-
-	$query = "INSERT INTO agendamentos (data, hora, id_usuario, id_especialidade) VALUES ('$data', '$horario', $id, '$especialidade')";
+	$query = "INSERT INTO agendamentos (data, hora, id_usuario, id_especialidade, status) VALUES ('$data', '$horario', $id, '$especialidade', 0)";
 	$result = mysqli_query($con, $query);
+
+    if($result){
+        echo '<script> alert("Consulta pendete de aprovação! fique atento nas suas consultas")</script>';
+    }else echo '<script> alert("tente novamente mais tarde")</script>';
 	
 }
 
@@ -45,11 +46,11 @@ if (@$_REQUEST['botao']=="cadastrar")
         <div class="container">
             <h1 class="title">Consultas</h1>
             <form action="agendar_consulta.php" class="form" method=post>
-                <input class="input" type="date" placeholder="data consulta" name="data">
+                <input class="input" type="date" required placeholder="data consulta" name="data">
                 <span class="input-border"></span>
-                <input class="input" type="time" placeholder="Horário" name="horario">
+                <input class="input" type="time" required placeholder="Horário" name="horario">
                 <span class="input-border"></span>
-                  <select class="input" name="especialidade" required>
+                  <select class="input" required name="especialidade" required>
                     <option value = ""> Selecione a especialidade</option>  
                     <?php
                             $resultDB = "SELECT * FROM especialidade";

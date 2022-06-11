@@ -10,7 +10,7 @@ if (@$_REQUEST['botao']=="cadastrar")
     $nome = $_POST['nome'];
 	$cpf = $_POST['cpf'];
     $email = $_POST['email'];
-    verifyCPF($cpf);
+
 
 	$query = "INSERT INTO usuario (nome, senha, email, cpf, nivel) VALUES ('$nome', '$senha', '$email', '$cpf', 'USER')";
 	$result = mysqli_query($con, $query);

@@ -21,11 +21,15 @@
             <img class="logo" src="./img/logo.png" alt="Logo Dra. Karen">
             <nav>
                 <a href="./index.php"> Home </a>
-                <a href="./institucional.php"> Minhas consultas </a>
-                <a href=""> Contato </a>
-            </nav>
-            <label><a class="agendar" href="agendar_consulta.php">agendar consulta
-            </a></label>
+                <a href="./consultas_user.php"> Minhas consultas </a>
+            </nav> 
+            <label>
+            <a class="agendar" href="logout.php">Sair
+            </a>
+            <a class="agendar" href="agendar_consulta.php">agendar consulta
+            </a>
+
+            </label>
         </div>
     </header>
 
@@ -42,7 +46,24 @@
                     </p>
                 </div>
                 <div id="foto" class="colunas">
-                    <img class="perfil" src="" alt="foto Dra. Karen">
+                    <img class="perfil" src="./img/PIM_dentista_03.jpg" alt="foto Dra. Karen">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div id="texto" class="colunas">
+                    <h1>Botox:</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit curae lacinia litora, vivamus rutrum at massa aptent mollis tempus nisi libero pretium primis, sapien non eleifend congue arcu odio lacus gravida elementum. Ultricies inceptos tempus montes ligula
+                        potenti cras nascetur justo volutpat vestibulum proin consequat aliquet, tellus interdum adipiscing aliquam fusce dignissim conubia mauris ipsum diam litora lectus. Velit ac suscipit arcu montes diam sit dictum fermentum donec,
+                        aptent pretium ut potenti adipiscing torquent aenean vivamus, hac at ultricies fames nulla ridiculus efficitur a. Amet nunc ipsum varius eleifend nisl bibendum aptent sed consequat vivamus, venenatis sapien porta nam tellus malesuada
+                        pellentesque.
+                    </p>
+                </div>
+                <div id="foto" class="colunas">
+                    <img class="perfil" src="./img/aplicacao-de-botox-750x500-1.jpg" alt="foto Dra. Karen">
                 </div>
             </div>
         </section>

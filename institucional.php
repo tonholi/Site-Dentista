@@ -20,7 +20,6 @@
                 <a href="./index.php"> Home </a>
                 <a href="./institucional.php"> Institucional </a>
                 <a href=""> Contato </a>
-                <a href=""> Trabalhos Realizados </a>
             </nav>
             <label><a class="agendar" href="login.php">Login</a></label>
         </div>
