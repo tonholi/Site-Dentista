@@ -16,9 +16,6 @@
             <img class="logo" src="./img/logo.png" alt="Logo Dra. Karen">
             <nav>
                 <a href="consultas_agendadas.php ">Consultas Agendadas </a>
-                <a href="materiais_disponiveis.php"> materiais disponíveis </a>
-                <a href="relatorio_usuarios.php"> usuários </a>
-                <a href=""> </a>
             </nav>
             <label><a class="agendar" href="logout.php">Sair
             </a></label>

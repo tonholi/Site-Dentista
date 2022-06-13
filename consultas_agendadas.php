@@ -35,8 +35,7 @@ if (@$_REQUEST['botao'] == "Confirmar" || @$_REQUEST['botao'] == "Cancelar") {
             <img class="logo" src="./img/logo.png" alt="Logo Dra. Karen">
             <nav>
                 <a href="consultas_agendadas.php ">Consultas Agendadas </a>
-                <a href="materiais_disponiveis.php"> materiais disponíveis </a>
-                <a href="relatorio_usuarios.php"> usuários </a>
+                <a href="index_adm_logado.php ">Voltar ao inicio </a>
             </nav>
             <label><a class="agendar" href="logout.php">Sair
             </a></label>
