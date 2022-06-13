@@ -1,6 +1,7 @@
 <?php
 
 include('config.php');
+include('verifica.php');
 
 $btn_acao = ['Confirmar' => 2, 'Cancelar' => 3];
 

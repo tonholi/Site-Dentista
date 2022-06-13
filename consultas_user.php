@@ -52,17 +52,10 @@
                                 <?php
 
                                 $id_usuario = $_SESSION["id_usuario"];
-                                @$data = $_POST['data'];
-                                //@$serie = $_POST['serie'];
-                                //@$descricao = $_POST['descricao'];
-                                //@$qtd = $_POST['qtd'];
+                                @$data = $_POST['data'];;
 
                                 $query = "SELECT * FROM agendamentos WHERE id_usuario = $id_usuario";
-                                //$query .= ($data ? " AND material LIKE '%$data%' " : "");
-                                //$query .= ($serie ? " AND serie LIKE '%$serie%' " : "");
-                                //$query .= ($descricao ? " AND descricao LIKE '%$descricao%' " : "");
-                                //$query .= ($qtd ? " AND qtd LIKE '%$qtd%' " : "");
-                                //$query .= " ORDER by id";
+  
                                 $result = mysqli_query($con, $query);
 
                                 while ($coluna = mysqli_fetch_assoc($result)) {

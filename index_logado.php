@@ -22,7 +22,7 @@
             <nav>
                 <a href="./index.php"> Home </a>
                 <a href="./consultas_user.php"> Minhas consultas </a>
-            </nav> 
+            </nav>  
             <label>
             <a class="agendar" href="logout.php">Sair
             </a>
