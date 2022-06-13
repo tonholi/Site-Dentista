@@ -8,7 +8,7 @@ if (@$_REQUEST['botao']=="cadastrar")
 	$data = $_POST['data'];
     $horario = $_POST['horario'];
     $especialidade= $_POST['especialidade'];
-	$query = "INSERT INTO agendamentos (data, hora, id_usuario, id_especialidade, status) VALUES ('$data', '$horario', $id, '$especialidade', 0)";
+	$query = "INSERT INTO agendamentos (data, hora, id_usuario, id_especialidade, status) VALUES ('$data', '$horario', $id, '$especialidade', 1)";
 	$result = mysqli_query($con, $query);
 
     if($result){
